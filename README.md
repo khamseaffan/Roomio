@@ -1,14 +1,6 @@
 
 # Roomio 
 Affan Khamse (ak10529) & Abijith Pradeep (ap8246) 
-
-pfrankl@nyu.edu 
-fz2244@nyu.edu 
-kz2555@nyu.edu
-
- 
-Supabase: Invited the above emails to the Supabase organization for database access. 
-
  
 
 # Work history
