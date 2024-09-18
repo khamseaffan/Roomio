@@ -7,6 +7,7 @@ Affan Khamse (ak10529) & Abijith Pradeep (ap8246)
 
 - Affan
   - Worked on HomePage
+  - session handling
   - searching for unit based on company name and  building name 
   - Favorite feature
   - feature to apply min and max rent
@@ -15,7 +16,6 @@ Affan Khamse (ak10529) & Abijith Pradeep (ap8246)
     
 - Abijith
   - Did the User Login & SignUp
-  - session handling
   - User Profile
   - Pet Add/Edit functionality
   - Searching apartment based on interest
