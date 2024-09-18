@@ -98,7 +98,8 @@ def search_interest(request):
        ab.address_city,
        ab.address_state,
        ab.address_zip_code,
-       u.username
+       u.username,
+       a.id
        FROM home_interest i
        INNER JOIN add_post_apartmentunit a ON i.unit_id = a.id
        INNER JOIN add_post_apartmentbuilding ab ON a.building_id = ab.id
@@ -133,9 +134,10 @@ def search_interest(request):
                 'address_state':row[8],
                 'address_zip_code':row[9],
                 'username': row[10],
+                'unit_id': row[11]
                 
             } for row in result]
-
+        print(interests_data)
     context = {
         'form': form,
         'interests_data': interests_data

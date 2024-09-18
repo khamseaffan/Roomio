@@ -264,5 +264,6 @@ def favorite_list(request):
     return render(request, 'home/favorite_page.html', {
         'favorites': favorites,
         'favorite_unit_ids': favorite_unit_ids,
-        'is_favourited': favorites[0] in favorite_unit_ids
+        # 'is_favourited': favorites[0] in favorite_unit_ids
+        'is_favourited': bool(favorites and favorites[0]['unit_id'] in favorite_unit_ids)
     })

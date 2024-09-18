@@ -32,7 +32,7 @@ MANIFEST
 *.manifest
 *.spec
 
-*.migrations/
+*/migrations/*
 
 # Installer logs
 pip-log.txt

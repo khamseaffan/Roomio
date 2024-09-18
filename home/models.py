@@ -16,7 +16,8 @@ class Interest(models.Model):
 
 class Favorite(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='user_favorites')
-    unit = models.ForeignKey(ApartmentUnit, on_delete=models.CASCADE, related_name='unit_favorites',default=ApartmentUnit.objects.first().id)
+    # unit = models.ForeignKey(ApartmentUnit, on_delete=models.CASCADE, related_name='unit_favorites',default=ApartmentUnit.objects.first().id)
+    unit = models.ForeignKey(ApartmentUnit, on_delete=models.CASCADE, related_name='unit_favorites')
     created_at = models.DateTimeField(auto_now_add=True)
     
     class Meta:

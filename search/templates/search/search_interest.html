@@ -33,7 +33,7 @@
                                 onclick="toggleFavourite(this)">
                             {{ item.is_favourited|yesno:"Unfavourite,Favourite" }}
                         </button>
-                        <button class="btn btn-primary" onclick="location.href='{% url 'home:view_detail' item.interest_id %}'">
+                        <button class="btn btn-primary" onclick="location.href='{% url 'home:view_detail' item.unit_id %}'">
                             More Details
                         </button>
                     </div>
